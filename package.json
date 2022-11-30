@@ -4,7 +4,7 @@
   "description": "An attempt to make a GH action that generates an SVG badge using cloverage text output",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
