@@ -1,0 +1,30 @@
+{
+  "name": "cloverbadge-action",
+  "version": "1.0.0",
+  "description": "An attempt to make a GH action that generates an SVG badge using cloverage text output",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinstella/cloverbadge-action.git"
+  },
+  "keywords": [
+    "badges",
+    "cloverage",
+    "clojure"
+  ],
+  "author": "mark@kinstelli.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kinstella/cloverbadge-action/issues"
+  },
+  "homepage": "https://github.com/kinstella/cloverbadge-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "squirrelly": "^8.0.8",
+    "ssh2-sftp-client": "^8.1.0"
+  }
+}

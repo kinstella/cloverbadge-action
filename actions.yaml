@@ -1,0 +1,29 @@
+name: 'Cloverage Badge'
+description: 'Upload a code coverage SVG badge to a webserver based on coverage output'
+inputs:
+  coverageTextPath:
+    description: 'The path in your repo for reading test coverage'
+    required: true
+    default: './target/coverage/coverage.txt'
+  outputImageFilename:  # id of input
+    description: 'The desired filename for your generated SVG'
+    required: false
+    default: 'coverage.svg'
+  hostingServer:
+    description: 'The file host where the generated image should be stored'
+    required: true
+  hostingLogin:
+    description: 'The login for the file host'
+    required: true
+  hostingPassword:
+    description: 'The password for the file host'
+    required: true
+  hostingPath:
+    description: 'The path on the host where the resulting file should be stored'
+    required: true
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

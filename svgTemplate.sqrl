@@ -1,0 +1,14 @@
+{{! /* svgTemplate.sqrl */}}
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="20">
+<rect xmlns="http://www.w3.org/2000/svg" y="0" rx="5" stroke-color="black" fill="#555555" width="100" stroke-width="1" x="0" ry="5" height="20"/>
+{{ @if (it.passing) }}
+<rect xmlns="http://www.w3.org/2000/svg" x="50" y="0" width="50" height="20" fill="#00cc00" rx="5" ry="5"/>
+{{ #else }}
+<rect xmlns="http://www.w3.org/2000/svg" x="50" y="0" width="50" height="20" fill="#ff0000" rx="5" ry="5"/>
+{{ /if}}`
+<rect xmlns="http://www.w3.org/2000/svg" x="10" y="0" width="50" height="20" fill="#555555"/>
+<text xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial" font-weight="bold" font-size="12" fill="black" x="5" y="15">{{ it.label }}</text>
+<text xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial" font-weight="bold" font-size="12" fill="white" x="4.5" y="14">{{ it.label }}</text>
+<text xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial" font-weight="bold" font-size="12" fill="black" x="65" y="15">{{ it.percent }}</text>
+<text xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial" font-weight="bold" font-size="12" fill="white" x="64.5" y="14">{{ it.percent }}</text>
+</svg>
