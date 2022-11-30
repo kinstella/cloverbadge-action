@@ -24,3 +24,4 @@ function uploadToServer(host, un, pw, path, filename) {
 }
 
 exports.uploadToServer = uploadToServer;
+exports.sftp = sftp;
